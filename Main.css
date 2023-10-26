@@ -1,5 +1,8 @@
-h1{
-            color: palegoldenrod;
-            font-size: 70px;
+
+:root{
+    --text-color--:blue;
+
 }
-    
+h1{
+    color:var(--text-color--)
+}
