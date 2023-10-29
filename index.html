@@ -12,35 +12,71 @@
             margin:0;
         }
 
-        .header{
-            width: calc(80%+20&);
+        .box{
+            width: 100%;
             height: 120px;
-           background: rgb(0,124,157);
-            /* padding:20px;
-            box-sizing: border-box;
-            border: 10px dashed #fff;
-            background-clip:content-box; */
-            /* background-image:url(https://nguoinoitieng.tv/images/nnt/100/0/beoj.jpg);
-            background-size:100%;
-            background-repeat: no-repeat; 
-            linear-gradient(0,rgba(255,255,0,0.5),rgba(0,0,255,0.5)),
-            background: url(https://nguoinoitieng.tv/images/nnt/100/0/beoj.jpg) no-repeat center / contain  
-             border:20px dashed #ccc;
-            padding: 20px;
-            box-sizing: border-box;
-            background-origin:content-box; */
+           background: rgb(190,124,157);
+           
         }
-          .header::after{
+        .box::after{
             content: attr(data-title);
           }
-          
+        
+        h1:hover{
+          color:paleturquoise;
+        } 
+        h1:active{
+          color: blue;
+        }
+        h1::first-letter{
+          font-size: 50px;
+          color:rebeccapurple;
+        }
+        h1::selection{
+          background-color: violet;
+          color:aliceblue;
+        }
+        .box::before{
+          content:"";
+          display: block;
+          width: 50px;
+          height: 50px;
+          background-color: wheat;
+        }
+        .box::after{
+          content:"";
+          display: block;
+          width: 50px;
+          height: 50px;
+          background-color: black;
+        }
         
       </style>
     </head>
     <body>
-      <div class="header" data-title="Đây là box màu hồng"></div>
+      <div class="box"></div>
+      <h1>CSS Pseudo-element <br/> Dòng thứ 2 </h1>
     <a href="https://facebook.com">Phan An Phú </a>
-      
+    <ul>
+      <li>::before</li>
+      <li>::after</li>
+      <li>::frist-letter</li>
+      <li>::frist-line</li>
+      <li>::selection</li>
+    </ul>
     </body>
 
 </html>
+<!-- /* padding:20px;
+box-sizing: border-box;
+border: 10px dashed #fff;
+background-clip:content-box; */
+/* background-image:url(https://nguoinoitieng.tv/images/nnt/100/0/beoj.jpg);
+background-size:100%;
+background-repeat: no-repeat; 
+linear-gradient(0,rgba(255,255,0,0.5),rgba(0,0,255,0.5)),
+background: url(https://nguoinoitieng.tv/images/nnt/100/0/beoj.jpg) no-repeat center / contain  
+ border:20px dashed #ccc;
+padding: 20px;
+box-sizing: border-box;
+background-origin:content-box; */ -->
